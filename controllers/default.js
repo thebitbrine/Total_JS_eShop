@@ -5,6 +5,7 @@ exports.install = function() {
 	ROUTE('#posts', view_posts, ['*Post']);
 	ROUTE('#post', view_posts_detail, ['*Post']);
 	ROUTE('#notices', view_notices, ['*Notice']);
+	//ROUTE('/', json_index, ['xhr']);
 };
 
 function view_cms() {
@@ -54,4 +55,10 @@ function view_notices() {
 
 	self.sitemap();
 	self.$query(options, self.callback('notices'));
+}
+
+function json_index(language) {
+	var self = this;
+	// console.log(TRANSLATE(self.language, 'Welcome')); --> converts "Welcome" to hash code
+	self.json({ message: RESOURCE(self.language, 'message') });
 }
