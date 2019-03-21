@@ -373,7 +373,7 @@ T1070118865      : Buscar icono
 T2331            : ID
 T2573240         : Enviado
 T-58529607       : Cancelado
-T1127534884      : Estdo de la orden
+T1127534884      : Estado de la orden
 T-1727678635     : Nota interna
 T350102535       : Procesado y cerrado
 T-1334468129     : Enviar email al cliente acerca del estado de la orden
@@ -899,7 +899,7 @@ T281974037       : No products in database.
 // themes\default\views\eshop\checkout.html
 T1736307741      : Your shopping cart is empty, <b>try to visit this page later.</b>
 T987981468       : 1 piece =
-T1373651743      : In stock:
+T1373651743      : En inventario:
 T1536018542      : Company name
 T1165935397      : Please choose a type of delivery.
 T-234457827      : Please choose a type of payment.
@@ -983,7 +983,7 @@ T174804690       : gracias por tu registro. Tu cuenta ha sido creada exitosament
 T-425308263      : MI CUENTA
 
 // themes\default\views\partials\filter.html
-T-1843702173     : Todos losfabricantes
+T-1843702173     : Todos los fabricantes
 T111235379       : Todos los tamaños
 T79900729        : Tamaño:
 T-1299603217     : Todos los colores
@@ -994,4 +994,4 @@ T181747051       : Precio alto
 
 // themes\default\views\partials\products.html
 T83253           : TOP
-T2043610225      : Detaller
+T2043610225      : Detalles

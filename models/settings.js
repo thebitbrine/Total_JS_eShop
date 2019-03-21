@@ -76,8 +76,8 @@ NEWSCHEMA('Settings').make(function(schema) {
 
 			if (err) {
 				settings = $.model;
-				settings.currency = 'EUR';
-				settings.currency_entity = '&euro;';
+				settings.currency = 'COP';
+				settings.currency_entity = '&cop;';
 			} else
 				settings = data.toString('utf8').parseJSON(true);
 
