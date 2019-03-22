@@ -75,7 +75,7 @@
 				</div>
 				@{fi}
 
-				@{if !model.isfinished && !model.ispaid}
+				@{if !model.isfinished && !model.ispaid  && model.ispaypalenable}
 					<br />
 					<div><button class="button b exec" name="paypal" data-exec="pay"><i class="fa fa-paypal"></i>@(Pay now)</button></div>
 					<div class="help">@(You will be redirect to secured <b>PayPal</b> payment page.)</div>

@@ -66,6 +66,7 @@ NEWSCHEMA('Order').make(function(schema) {
 	schema.define('isnewsletter', Boolean);         // internal
 	schema.define('ispaid', Boolean);
 	schema.define('isterms', Boolean);              // internal
+	schema.define('ispaypalenable', Boolean);
 
 	// Custom validaiton
 	schema.required('company, companyvat, companyid', n => n.iscompany);
@@ -122,6 +123,8 @@ NEWSCHEMA('Order').make(function(schema) {
 		var isUpdate = !!model.id;
 		var nosql = NOSQL('orders');
 
+		//Set the Boolean to enable PayPal
+		model.ispaypalenable=false;
 		// Cleans unnecessary properties
 		model.isnewsletter = undefined;
 		model.isemail = undefined;

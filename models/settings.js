@@ -146,6 +146,9 @@ NEWSCHEMA('Settings').make(function(schema) {
 				case 'usd':
 					settings.currency_entity = '$ {0}';
 					break;
+				case 'cop':
+					settings.currency_entity = '{0} COP';
+					break;
 				case 'gbp':
 					settings.currency_entity = '{0} &pound;';
 					break;
