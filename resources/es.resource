@@ -80,13 +80,13 @@ T-939117180      : Productos
 T76873636        : Paginas
 T82025960        : Usuarios
 T1488075450      : Newsletters
-T1071879433      : segundos + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'segundos', 'segundo', 'segundos', 'segundos') + ' atras'
-T109270          : ahora
-T-384049170      : minutos + ' minutos ago'
-T-203634781      : horas + ' ' + Tangular.helpers.pluralize(horas, 'horas', 'hora', 'horas', 'horas') + ' atras'
-T-10559765       : dias + ' ' + Tangular.helpers.pluralize(dias, 'dias', 'dia', 'dias', 'dias') + ' atras'
-T-689200589      : meses + ' ' + Tangular.helpers.pluralize(meses, 'meses', 'mes', 'meses', 'meses') + ' atras'
-T-735310909      : años + ' ' + Tangular.helpers.pluralize(años, 'años', 'año', 'años', 'años') + ' atras'
+T1071879433      : seconds + ' ' + Tangular.helpers.pluralize(seconds >> 0, 'seconds', 'second', 'seconds', 'seconds') + ' ago'
+T109270          : now
+T-384049170      : minutes + ' minutes ago'
+T-203634781      : hours + ' ' + Tangular.helpers.pluralize(hours, 'hours', 'hour', 'hours', 'hours') + ' ago'
+T-10559765       : days + ' ' + Tangular.helpers.pluralize(days, 'days', 'day', 'days', 'days') + ' ago'
+T-689200589      : months + ' ' + Tangular.helpers.pluralize(months, 'months', 'month', 'months', 'months') + ' ago'
+T-735310909      : years + ' ' + Tangular.helpers.pluralize(years, 'years', 'year', 'years', 'years') + ' ago'
 T262574666       : Producto guardado
 T365918789       : Navigation guardada
 T-555013092      : Categoria remplazada
