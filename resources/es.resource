@@ -14,19 +14,19 @@ T-831934885      : /admin/*
 T1601548646      : Checkout
 T-246800294      : /checkout/
 T-493066586      : /categories/*
-T-1505368894     : Product detail
+T-1505368894     : Detalles del producto
 T-322319210      : /detail/{0}/
 T46971433        : /top/
-T-247975932      : New products
+T-247975932      : Nuevos productos
 T46783294        : /new/
 T1621739941      : /popular/
-T1147708377      : My account
+T1147708377      : Mi cuenta
 T-1188160303     : /account/
-T684792195       : Order detail
+T684792195       : Detalles de la orden
 T73863297        : /checkout/{0}/
-T-683312938      : Account settings
+T-683312938      : Ajustes de cuenta
 T-1917090117     : /account/settings/
-T-2013462581     : Logoff
+T-2013462581     : Cerrar sesion
 T650223317       : /logoff/
 
 // sitemap, themes\admin\views\index.html
@@ -621,9 +621,9 @@ T-268726473      : Descargar widgets
 T504069362       : Plantilla predefinida
 T-1908600166     : Documentacion
 T-1191422485     : Mantener tamaño fijo de 300x200px
-T-566428422      : Edit widget
-T-1529159452     : New widget
-T2145409692      : Widget has been saved successfully.
+T-566428422      : Editar widget
+T-1529159452     : Nuevo widget
+T2145409692      : El widget se guardo exitosamente.
 
 // themes\admin\public\templates\dashboard.html
 T-1527998056     : Numero total de visitantes:
