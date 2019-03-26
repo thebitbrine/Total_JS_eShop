@@ -1,16 +1,16 @@
---------> DEBUG PID: 10519 (v3.2.4)
+--------> DEBUG PID: 1732 (v3.2.4)
 ====================================================
-PID           : 10530
+PID           : 1743
 Node.js       : v11.6.0
 Total.js      : v3.2.4
 OS            : linux 4.4.0-1077-aws
-Memory        : 11.70 MB / 21.38 MB
+Memory        : 11.72 MB / 21.38 MB
 User          : root
 ====================================================
 Name          : E-shop
 Version       : 11.0.0
 Author        : Peter Širka
-Date          : 2019-03-25 18:27:49
+Date          : 2019-03-26 00:47:32
 Mode          : debug
 ====================================================
 Directory     : /opt/bitnami/apps/Total_JS_eShop
@@ -19,74 +19,13 @@ node_modules  : /opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/
 
 http://0.0.0.0:8000/
 
-(node:10530) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
-======= 2019-03-25 20:32:43: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 20:33:14: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 20:33:48: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 20:36:18: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 20:36:28: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 20:37:14: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 21:03:45: mail-smtp ---> Error: 408: Request Timeout (smtp.gmail.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 21:04:36: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 21:04:47: mail-smtp ---> Error: 408: Request Timeout (smtp.gmail.com) Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
-======= 2019-03-25 21:09:23: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
-    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
-    at Object.onceWrapper (events.js:276:13)
-    at Socket.emit (events.js:188:13)
-    at Socket._onTimeout (net.js:446:8)
-    at listOnTimeout (timers.js:324:15)
-    at processTimers (timers.js:268:5)
+(node:1743) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+======= 2019-03-26 15:09:50: F.useSMTP() ---> Error: 534 5.7.14  HTTPS://SUPPORT.GOOGLE.COM/MAIL/ANSWER/78754 T69SM10503198QKE.38 - GSMTP Error: 534 5.7.14  HTTPS://SUPPORT.GOOGLE.COM/MAIL/ANSWER/78754 T69SM10503198QKE.38 - GSMTP
+    at TLSSocket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:910:15)
+    at TLSSocket.emit (events.js:188:13)
+    at TLSSocket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:790:28)
+    at TLSSocket.emit (events.js:188:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:265:13)
+    at TLSSocket.Readable.push (_stream_readable.js:224:10)
+    at TLSWrap.onStreamRead (internal/stream_base_commons.js:145:17)
