@@ -55,7 +55,7 @@ interval = setInterval(function() {
     testindex++;
   }
   if (typeof steps[testindex] != "function") {
-    console.log("test complete!");
+    //console.log("test complete!");
     phantom.exit();
   }
 }, 50);
