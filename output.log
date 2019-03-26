@@ -1,0 +1,92 @@
+--------> DEBUG PID: 10519 (v3.2.4)
+====================================================
+PID           : 10530
+Node.js       : v11.6.0
+Total.js      : v3.2.4
+OS            : linux 4.4.0-1077-aws
+Memory        : 11.70 MB / 21.38 MB
+User          : root
+====================================================
+Name          : E-shop
+Version       : 11.0.0
+Author        : Peter Širka
+Date          : 2019-03-25 18:27:49
+Mode          : debug
+====================================================
+Directory     : /opt/bitnami/apps/Total_JS_eShop
+node_modules  : /opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/
+====================================================
+
+http://0.0.0.0:8000/
+
+(node:10530) Warning: Setting the NODE_TLS_REJECT_UNAUTHORIZED environment variable to '0' makes TLS connections and HTTPS requests insecure by disabling certificate verification.
+======= 2019-03-25 20:32:43: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 20:33:14: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 20:33:48: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 20:36:18: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 20:36:28: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 20:37:14: mail-smtp ---> Error: 408: Request Timeout (email-smtp.us-east-1.amazonaws.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 21:03:45: mail-smtp ---> Error: 408: Request Timeout (smtp.gmail.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 21:04:36: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 21:04:47: mail-smtp ---> Error: 408: Request Timeout (smtp.gmail.com) Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
+======= 2019-03-25 21:09:23: F.useSMTP() ---> Error: 408: Request Timeout Error: 408: Request Timeout
+    at Socket.<anonymous> (/opt/bitnami/apps/Total_JS_eShop/node_modules/total.js/mail.js:615:13)
+    at Object.onceWrapper (events.js:276:13)
+    at Socket.emit (events.js:188:13)
+    at Socket._onTimeout (net.js:446:8)
+    at listOnTimeout (timers.js:324:15)
+    at processTimers (timers.js:268:5)
