@@ -409,7 +409,7 @@ T-1240389125     : Direccion IP
 T-609016686      : Terminado
 
 // themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html, themes\default\views\mails\order-status.html, themes\default\views\mails\order.html
-T888111124       : Entregado
+T888111124       : Entrega
 
 // themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html
 T877971942       : Pago
@@ -972,7 +972,7 @@ T-165209774      : Direccion de entrega:
 T-1435643911     : RASTREAR ENVIO
 
 // themes\default\views\mails\order.html
-T1841011644      : muchas gracias por tu compra. Tu orden ha sido creada exitosamente. Este es un correo de confirmacion de tuu orden.
+T1841011644      : muchas gracias por tu compra. Tu orden ha sido creada exitosamente. Este es un correo de confirmacion de tu orden.
 
 // themes\default\views\mails\password.html
 T1577305707      : usaste la opcion establecer contraseña. Porfavor dar click en el botton abajo para restablecer tu contraseña. Si recibiste este correo por error porfavor ignorar.
