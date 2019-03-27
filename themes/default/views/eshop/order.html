@@ -38,7 +38,8 @@
 			@{if model.message}
 			<div class="contentbody bg-yellow">
 				<div class="help mb10"><i class="fa fa-warning"></i>@(Message for you:)</div>
-				<div class="b">@{model.message.replace(/\n/g, '<br />')}</div>
+				<!--<div class="b">@{model.message.replace(/\n/g, '<br />')}</div>-->
+				<div class="b">@{model.message}</div>
 			</div>
 			@{fi}
 
