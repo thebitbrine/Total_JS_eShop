@@ -1,4 +1,4 @@
 # Ignore the database so changes on dev do not impact prod
-databases/
+#databases/
 
 tmp/
