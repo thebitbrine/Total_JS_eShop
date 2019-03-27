@@ -1,5 +1,5 @@
 // Total.js translation file
-// Created: 2019-03-20 23:31
+// Created: 2019-03-26 23:28
 
 // sitemap, themes\admin\public\forms\pages.html, themes\admin\public\forms\products.html
 T-420727794      : Homepage
@@ -159,10 +159,8 @@ T-542111160      : Sign in
 // themes\default\views\layout.html
 T532540938       : We recommend
 T-63914826       : New goods
-T-824286966      : Search products ...
-
-// themes\default\views\layout.html, themes\default\views\partials\products.html
 T77184           : NEW
+T-824286966      : Search products ...
 
 // themes\default\views\layout.html, themes\admin\public\templates\settings.html
 T-1004985796     : Categories
@@ -993,5 +991,6 @@ T-487343779      : Low price
 T181747051       : High price
 
 // themes\default\views\partials\products.html
+T74635927        : NUEVO
 T83253           : TOP
-T2043610225      : Detail
+T-1072589481     : Detalle

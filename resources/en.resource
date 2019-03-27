@@ -993,5 +993,6 @@ T-487343779      : Low price
 T181747051       : High price
 
 // themes\default\views\partials\products.html
+T74635927        : NEW
 T83253           : TOP
-T2043610225      : Detail
+T-1072589481     : Detail

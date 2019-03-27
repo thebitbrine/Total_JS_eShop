@@ -955,7 +955,7 @@ T1288820174      : Te hemos enviado las instructiones para Restablecer tu contra
 
 // themes\default\views\mails\contact.html
 T-1701314625     : Estimado administrador
-T1111165939      : En tu sitio webs se ha enviado un formulario de contacto. Porfavor revisar el formulario y responder:
+T1111165939      : En tu sitio web se ha enviado un formulario de contacto. Porfavor revisar el formulario y responder:
 T-1522202775     : Numero de contacto
 T-397449933      : Mensage:
 
@@ -993,5 +993,6 @@ T-487343779      : Precio bajo
 T181747051       : Precio alto
 
 // themes\default\views\partials\products.html
+T74635927        : NUEVO
 T83253           : TOP
-T2043610225      : Detalles
+T-1072589481     : Detalle
