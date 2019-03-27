@@ -166,7 +166,7 @@ NEWSCHEMA('Order').make(function(schema) {
 
 		db.callback(function() {
 			EMIT('orders.save', model);
-			ADMIN.notify({ type: 'orders.save', message: model.name + ', ' + model.price.format(2) });
+			ADMIN.notify({ type: 'orders.save', message: model.name + ', ' + model.price.format(0) });
 			$.success();
 		});
 
@@ -325,7 +325,7 @@ NEWSCHEMA('Order').make(function(schema) {
 			var mail = MAIL(model.email, '@(Order #) ' + model.id, '=?/mails/order', model, model.language);
 			F.global.config.emailorderform && mail.bcc(F.global.config.emailorderform);
 
-			ADMIN.notify({ type: 'orders.create', message: model.name + ', ' + model.price.format(2) });
+			ADMIN.notify({ type: 'orders.create', message: model.name + ', ' + model.price.format(0) });
 		});
 	});
 

@@ -73,7 +73,7 @@
 							@{end}
 						</nav>
 						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
-							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(2) : (0).format(2))">...</b><span>@(Your shopping cart)</span></a>
+							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(0) : (0).format(0))">...</b><span>@(Your shopping cart)</span></a>
 						</div>
 						<form class="search" action="@{sitemap_url('category')}" method="get">
 							<button><i class="fa fa-search"></i></button>

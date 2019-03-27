@@ -77,7 +77,7 @@ NEWSCHEMA('Settings').make(function(schema) {
 			if (err) {
 				settings = $.model;
 				settings.currency = 'COP';
-				settings.currency_entity = '&cop;';
+				settings.currency_entity = '$ {0};';
 			} else
 				settings = data.toString('utf8').parseJSON(true);
 
@@ -147,7 +147,7 @@ NEWSCHEMA('Settings').make(function(schema) {
 					settings.currency_entity = '$ {0}';
 					break;
 				case 'cop':
-					settings.currency_entity = '{0} COP';
+					settings.currency_entity = '$ {0}';
 					break;
 				case 'gbp':
 					settings.currency_entity = '{0} &pound;';
@@ -186,5 +186,5 @@ NEWSCHEMA('Settings').make(function(schema) {
 });
 
 Number.prototype.currency = function() {
-	return F.global.config.currency_entity.format(this.format(2));
+	return F.global.config.currency_entity.format(this.format(0));
 };

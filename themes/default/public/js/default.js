@@ -145,8 +145,8 @@ function refresh_prices() {
 			p && el.prepend('<div class="diff">-{0}%</div>'.format(p.format(0)));
 
 			if (discount) {
-				var plus = p ? '<span>{0}</span>'.format(currency.format(price.format(2))) : '';
-				el.find('.price > div').html(currency.format(price.inc('-' + discount + '%').format(2)) + plus);
+				var plus = p ? '<span>{0}</span>'.format(currency.format(price.format(0))) : '';
+				el.find('.price > div').html(currency.format(price.inc('-' + discount + '%').format(0)) + plus);
 			}
 		});
 

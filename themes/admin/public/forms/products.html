@@ -310,7 +310,7 @@
 				if (tmp.price !== value.price || tmp.stock || value.stock) {
 					value.stock = tmp.stock;
 					value.price = tmp.price;
-					item.price.val(value.price.format(2));
+					item.price.val(value.price.format(0));
 					item.stock.val(value.stock + 'x');
 				}
 			}
@@ -337,7 +337,7 @@
 				var el = template.clone();
 
 				el.name.val(item.name || '');
-				el.price.val((item.price || 0).format(2));
+				el.price.val((item.price || 0).format(0));
 				el.stock.val((item.stock || 0) + 'x');
 
 				el.attrd('index', i);

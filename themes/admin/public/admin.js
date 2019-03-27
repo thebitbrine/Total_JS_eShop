@@ -120,7 +120,7 @@ Number.prototype.filesize = function(decimals, type) {
 	}
 
 	type = ' ' + type;
-	return (decimals === undefined ? value.format(2).replace('.00', '') : value.format(decimals)) + type;
+	return (decimals === undefined ? value.format(0).replace('.00', '') : value.format(decimals)) + type;
 };
 
 function filesizehelper(number, count) {
@@ -134,9 +134,9 @@ function filesizehelper(number, count) {
 
 Tangular.register('counter', function(value) {
 	if (value > 999999)
-		return (value / 1000000).format(2) + ' M';
+		return (value / 1000000).format(0) + ' M';
 	if (value > 9999)
-		return (value / 10000).format(2) + ' K';
+		return (value / 10000).format(0) + ' K';
 	return value.format(0);
 });
 

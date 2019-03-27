@@ -205,13 +205,13 @@
 					var product = shoppingcart.read(ccontainer.attrd('token'));
 					var item = ccontainer.get(0).$item;
 					count = shoppingcart.upd(product.token, count);
-					item.sum.html(currency.format((count * product.sum).format(2)));
+					item.sum.html(currency.format((count * product.sum).format(0)));
 					input.value = count;
 				}, 500, 10, this);
 			});
 
 			self.on('shoppingcart.sum', function(data) {
-				summarize.html(currency.format(data.sum.format(2)));
+				summarize.html(currency.format(data.sum.format(0)));
 				!skip && self.render();
 			});
 		};
@@ -225,8 +225,8 @@
 					obj.name.html(item.name);
 					item.variant && obj.variant.html(item.variant);
 					obj.count.val(item.count);
-					obj.price.html(currency.format(item.sum.format(2)));
-					obj.sum.html(currency.format((item.count * item.sum).format(2)));
+					obj.price.html(currency.format(item.sum.format(0)));
+					obj.sum.html(currency.format((item.count * item.sum).format(0)));
 
 					if (item.stock)
 						obj.stock.html(item.stock).rclass('red');

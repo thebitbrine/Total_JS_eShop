@@ -277,7 +277,7 @@
 			var item = arr[i];
 			sum += (item.price || 0) * (item.count || 0);
 		}
-		return sum.format(2);
+		return sum.format(0);
 	}
 
 	SCOPE('Orders', function(ctrl) {
@@ -400,8 +400,8 @@
 				if (tmp.price !== value.price || tmp.count || value.count) {
 					value.count = tmp.count;
 					value.price = tmp.price;
-					item.sum.html((value.price * value.count).format(2));
-					item.price.val(value.price.format(2));
+					item.sum.html((value.price * value.count).format(0));
+					item.price.val(value.price.format(0));
 					item.count.val(value.count + 'x');
 				}
 			}
@@ -426,9 +426,9 @@
 
 				el.reference.val(item.reference || '');
 				el.name.val(item.name || '');
-				el.price.val((item.price || 0).format(2));
+				el.price.val((item.price || 0).format(0));
 				el.count.val((item.count || 0) + 'x');
-				el.sum.html(((item.price || 0) * (item.count || 0)).format(2));
+				el.sum.html(((item.price || 0) * (item.count || 0)).format(0));
 
 				el.attrd('index', i);
 				items.push(el);
