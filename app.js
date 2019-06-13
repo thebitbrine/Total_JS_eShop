@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // ===================================================
 // FOR DEVELOPMENT
 // Total.js - framework for Node.js platform
