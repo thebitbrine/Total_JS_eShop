@@ -13,11 +13,12 @@ body { background-color: #F0F0F0; }
 .wnowrap { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
 .right { text-align: right; }
 .center { text-align: center; }
+.topnav { overflow: hidden; background-color: #334;height: 10%;}
 
 header { height: 80px; }
 header nav { display: block; margin-bottom: 10px; }
-header nav a { font-size: 14px; font-family: $font; margin-left: 20px; text-transform: uppercase; font-weight: bold; color: black; text-shadow: 1px 1px 1px white; }
-header nav a:hover { text-decoration: none; color: black; }
+header nav a { font-size: 14px; font-family: $font; margin-left: 20px; text-transform: uppercase; font-weight: bold; color: white; text-shadow: 1px 1px 1px gray; }
+header nav a:hover { text-decoration: none; border-radius:5px; border: 1px solid #ccc; }
 header nav a:first-child { margin-left: 0; }
 header nav .fa { margin-right: 5px; }
 .relative { position: relative; }
@@ -122,6 +123,13 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 .product .diff { position: absolute; left: 15px; top: 10px; width: 38px; height: 26px; background-color: red; border-radius: 3px; font-size: 11px; text-align: center; padding: 5px 0 0 0; color: white; font-weight: bold; opacity: 0; transform: scale(1.3); transition: all 0.3s; }
 .product .diff.animate { transform: scale(1); opacity: 1; }
 
+.mainlogo { padding: 30px; display: block;}
+.mainlogo img {
+			height: auto;
+	    width: auto;
+	    max-height: 72px;
+	    max-width: 100%;
+}
 .logo { padding: 30px; display: block; }
 .logo img { display: block; max-width: 100%; height: auto; }
 
@@ -220,12 +228,12 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 .order > a:hover { background-color: #6C9BFE; }
 
 @media(max-width: 768px) {
+	.topnav{ margin-top: 20px; margin-bottom: 10px; height: auto; }
 	.categories { margin-top: 20px; }
 	header { margin-bottom: 10px; height: auto; }
 	header nav { padding: 10px 0 5px; }
 	header nav a { margin-left: 10px; }
-	.account { margin: 10px 0 0 0; font-size: 11px; left: 15px; top: -40px; }
-	.account a { color: #505050; }
+	.account { margin: 10px 0 0 0; font-size: 11px; left: 15px; }
 	.breadcrumb { display: none; }
 	.search { margin: 0 0 20px; display: block; }
 	.shoppingcart { float: none; margin-bottom: 10px; width: 100%; }
@@ -271,4 +279,3 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 .noticebody p { margin: 10px 0 0; }
 .noticebody ul { margin: 10px 0 0; }
 .noticebody img { display: block; margin: 10px 0 0; border-radius: 4px; }
-

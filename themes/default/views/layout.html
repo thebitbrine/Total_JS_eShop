@@ -14,30 +14,66 @@
 	<script>var LOGGED = +'@{if user}1@{else}0@{fi}';</script>
 </head>
 <body data-jc="exec,binder,modificator">
-	<br />
 	<div data-jc="loading" class="ui-loading@{if !repository.loading} hidden@{fi}"></div>
 	<div data-jc="shoppingcart" data-jc-path="shoppingcart" data-jc-config="discount:@{if user}@{user.discount}@{else}0@{fi}"></div>
 	<div data-jc="message" data-jc-config="button:@(Close)"></div>
 	<div data-jc="autocomplete"></div>
+	<div class="topnav">
+		<div class="container">
+			<div class="relative">
+				<div class="account">
+					@{if user}
+						<a href="@{sitemap_url('account')}" class="b">@{user.name}</a>
+						<a href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Settings)</a>
+						<a href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Sign out)</a>
+					@{else}
+						<a href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Sign in)</a>
+					@{fi}
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<a href="/" class="mainlogo"><img src="/img/logo.png" alt="@{'%name'}" border="0" /></a>
+			</div>
+			<div class="col-md-9">
+				<section class="body">
+					<header>
+						<nav>
+							@{foreach m in F.global.navigations.menu.children}
+								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
+							@{end}
+						</nav>
+						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
+							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(0) : (0).format(0))">...</b><span>@(Your shopping cart)</span></a>
+						</div>
+						<form class="search" action="@{sitemap_url('category')}" method="get">
+							<button><i class="fa fa-search"></i></button>
+							<div><input type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
+						</form>
+					</header>
+
+					<nav class="breadcrumb">
+						@{foreach m in sitemap()}
+							@{if m.id === 'category'}
+								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
+							@{else}
+								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
+							@{fi}
+						@{end}
+					</nav>
+
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<br />
 
 	<div class="container">
-
-		<div class="relative">
-			<div class="account">
-				@{if user}
-					<a href="@{sitemap_url('account')}" class="b">@{user.name}</a>
-					<a href="@{sitemap_url('settings')}"><i class="fa fa-cog"></i>@(Settings)</a>
-					<a href="@{sitemap_url('logoff')}"><i class="fa fa-sign-out"></i>@(Sign out)</a>
-				@{else}
-					<a href="@{sitemap_url('account')}"><i class="fa fa-lock"></i>@(Sign in)</a>
-				@{fi}
-			</div>
-		</div
-
 		<div class="row">
 			<div class="col-md-3">
 				<section class="categories">
-					<a href="/" class="logo"><img src="/img/logo.png" alt="@{'%name'}" border="0" /></a>
 					<div class="categoriescontainer">
 						<div class="categoriesbody bg-yellow fs12 ui-center m">
 							<b>Seguridad y Respaldo</b> en tus reparaciones.
@@ -66,30 +102,6 @@
 			<div class="col-md-9">
 				<section class="body">
 
-					<header>
-						<nav>
-							@{foreach m in F.global.navigations.menu.children}
-								<a href="@{m.url}">@{if m.icon}<i class="fa fa-@{m.icon}"></i>@{fi}@{m.name}</a>
-							@{end}
-						</nav>
-						<div class="shoppingcart" data-m="shoppingcart.sum + shoppingcart">
-							<a href="@{sitemap_url('checkout')}"><b data-b="shoppingcart.sum" data-b-html="'@{global.config.currency_entity}'.format(value ? value.format(0) : (0).format(0))">...</b><span>@(Your shopping cart)</span></a>
-						</div>
-						<form class="search" action="@{sitemap_url('category')}" method="get">
-							<button><i class="fa fa-search"></i></button>
-							<div><input type="text" placeholder="@(Search products ...)" name="q" value="@{query.q}" id="search" autocomplete="off" /></div>
-						</form>
-					</header>
-
-					<nav class="breadcrumb">
-						@{foreach m in sitemap()}
-							@{if m.id === 'category'}
-								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
-							@{else}
-								<i class="fa fa-caret-right"></i><a href="@{m.url}">@{m.name}</a>
-							@{fi}
-						@{end}
-					</nav>
 					@{body}
 				</section>
 			</div>
