@@ -1,5 +1,5 @@
 // Total.js translation file
-// Created: 2019-03-26 23:28
+// Created: 2019-06-19 17:03
 
 // sitemap, themes\admin\public\forms\pages.html, themes\admin\public\forms\products.html
 T-420727794      : Homepage
@@ -156,17 +156,17 @@ T-1001660743     : Browse all products
 // themes\default\views\layout.html, themes\default\views\eshop\signin.html
 T-542111160      : Sign in
 
+// themes\default\views\layout.html, themes\default\views\eshop\checkout.html
+T1102570955      : Your shopping cart
+
 // themes\default\views\layout.html
+T-824286966      : Search products ...
 T532540938       : We recommend
 T-63914826       : New goods
 T77184           : NEW
-T-824286966      : Search products ...
 
 // themes\default\views\layout.html, themes\admin\public\templates\settings.html
 T-1004985796     : Categories
-
-// themes\default\views\layout.html, themes\default\views\eshop\checkout.html
-T1102570955      : Your shopping cart
 
 // themes\default\views\notices.html, themes\default\views\posts.html, themes\admin\public\forms\filebrowser.html, themes\admin\public\forms\notices.html, themes\admin\public\forms\posts.html, themes\admin\public\templates\notices.html, themes\admin\public\templates\posts.html, themes\default\views\cms\product.html, themes\default\views\mails\contact.html, themes\default\views\mails\order.html
 T-159776256      : yyyy-MM-dd
@@ -371,19 +371,20 @@ T1070118865      : Search icon
 T2331            : ID
 T2573240         : Sent
 T-58529607       : Canceled
+T-1879307469     : Processing
 T1127534884      : Order status
 T-1727678635     : Internal note
 T350102535       : Processed and closed
 T-1334468129     : Send email to customer about the order status
-T1747670712      : Custom number
-T842742336       : Information only
-T1211526541      : A custom message for the customer
 T-775889652      : Contact information
-T413713309       : Delivery address is same as billing address
 T-657643561      : Ordered products
 T-1684223880     : IMPORTANT:
 T1164136855      : count of products in stock is not affected by change of count of ordered products
 T1677450041      : Summarize:
+T1747670712      : Custom number
+T842742336       : Information only
+T1211526541      : A custom message for the customer
+T413713309       : Delivery address is same as billing address
 T-1826507304     : Edit order
 T-56447826       : New order
 T-1629522414     : Order has been saved successfully.
@@ -406,22 +407,6 @@ T-1240389125     : IP address
 // themes\admin\public\forms\orders.html, themes\default\views\eshop\account.html, themes\default\views\eshop\order.html
 T-609016686      : Finished
 
-// themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html, themes\default\views\mails\order-status.html, themes\default\views\mails\order.html
-T888111124       : Delivery
-
-// themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html
-T877971942       : Payment
-T358836015       : Billing address
-T1518691304      : Delivery address
-
-// themes\admin\public\forms\orders.html, themes\default\views\eshop\order.html
-T-1816114794     : Tracking code
-T-1679829923     : Company
-T65298671        : Count
-
-// themes\admin\public\forms\orders.html, themes\admin\public\forms\users.html
-T-1764619994     : Discount %
-
 // themes\admin\public\forms\orders.html, themes\admin\public\forms\users.html, themes\default\public\widgets\contactform.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\settings.html, themes\default\views\eshop\signin.html
 T1774297627      : First name
 T-336058955      : Last name
@@ -438,11 +423,27 @@ T2100619         : City
 T88833           : ZIP
 T-1672482954     : Country
 
+// themes\admin\public\forms\orders.html, themes\default\views\eshop\order.html
+T-1679829923     : Company
+T65298671        : Count
+T-1816114794     : Tracking code
+
 // themes\admin\public\forms\orders.html, themes\default\views\cms\product.html
 T1078812459      : Reference
 
 // themes\admin\public\forms\orders.html, themes\admin\public\forms\products.html
 T-1988677775     : Add a new item
+
+// themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html, themes\default\views\mails\order-status.html, themes\default\views\mails\order.html
+T888111124       : Delivery
+
+// themes\admin\public\forms\orders.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html
+T877971942       : Payment
+T358836015       : Billing address
+T1518691304      : Delivery address
+
+// themes\admin\public\forms\orders.html, themes\admin\public\forms\users.html
+T-1764619994     : Discount %
 
 // themes\admin\public\forms\pages-globals.html
 T-1991447440     : Edit global variables
