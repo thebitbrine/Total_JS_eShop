@@ -14,7 +14,62 @@ body { background-color: #F0F0F0; }
 .right { text-align: right; }
 .center { text-align: center; }
 .topnav { overflow: hidden; background-color: #334;height: 10%;}
+.languagepicker {
+	background-color: #FFF;
+	display: inline-block;
+	padding: 0;
+	height: 40px;
+	overflow: hidden;
+	transition: all .3s ease;
+	margin: 0 10px 10px 0;
+	vertical-align: top;
+	float: left;
+	top: 500px;
 
+}
+
+.languagepicker:hover {
+	/* don't forget the 1px border */
+	height: 81px;
+}
+
+.languagepicker a{
+	color: #000;
+	text-decoration: none;
+}
+
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 40px;
+	border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover{
+	background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+	border: none;
+	background: #FFF !important;
+}
+
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+.roundborders {
+	border-radius: 5px;
+}
+
+.large:hover {
+	/*
+	don't forget the 1px border!
+	The first language is 40px heigh,
+	the others are 41px
+	*/
+	height: 245px;
+}
 header { height: 80px; }
 header nav { display: block; margin-bottom: 10px; }
 header nav a { font-size: 14px; font-family: $font; margin-left: 20px; text-transform: uppercase; font-weight: bold; color: white; text-shadow: 1px 1px 1px gray; }
@@ -23,7 +78,7 @@ header nav a:first-child { margin-left: 0; }
 header nav .fa { margin-right: 5px; }
 .relative { position: relative; }
 
-.account { position: absolute; font-size: 12px; border-radius: 3px; margin: 3px 0 0 0; right: 20px; z-index: 3; }
+.account { position: absolute; font-size: 12px; border-radius: 3px; margin: 3px 0 0 0; right: 105px; z-index: 3; }
 .account .fa { margin-right: 5px; }
 .account a { margin-left: 10px; border-left: 1px solid #D0D0D0; padding-left: 10px; }
 .account a:first-child { border-left: 0; margin-left: 0; padding-left: 0; }
@@ -233,6 +288,7 @@ h1 .fa, h2 .fa { margin-right: 10px; }
 	header { margin-bottom: 10px; height: auto; }
 	header nav { padding: 10px 0 5px; }
 	header nav a { margin-left: 10px; }
+	.languagepicker { margin: 10px 0 0 0; font-size: 11px; left: 15px; }
 	.account { margin: 10px 0 0 0; font-size: 11px; left: 15px; }
 	.breadcrumb { display: none; }
 	.search { margin: 0 0 20px; display: block; }
