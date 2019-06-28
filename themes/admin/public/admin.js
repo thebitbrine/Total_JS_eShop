@@ -143,3 +143,25 @@ Tangular.register('counter', function(value) {
 Tangular.register('default', function(value, def) {
 	return value == null || value === '' ? def : value;
 });
+
+$(document).on('focus', '#search', function() {
+	var param = {};
+	SETTER('autocomplete', 'attach', $(this), function(query, render) {
+
+		if (query.length < 3) {
+			render(EMPTYARRAY);
+			return;
+		}
+
+		param.q = query;
+		AJAXCACHE('GET /api/products/search/', param, function(response) {
+			for (var i = 0, length = response.length; i < length; i++)
+				response[i].type = response[i].category;
+			render(response);
+		}, '2 minutes');
+
+	}, function(value) {
+		//location.href = value.linker;
+		$('#search').val(value.name);
+	}, 15, -11, 72);
+});

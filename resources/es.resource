@@ -373,6 +373,7 @@ T1070118865      : Buscar icono
 T2331            : ID
 T2573240         : Enviado
 T-58529607       : Cancelado
+T-1879307469     : En Proceso
 T1127534884      : Estado de la orden
 T-1727678635     : Nota interna
 T350102535       : Procesado y cerrado
@@ -426,7 +427,7 @@ T-1764619994     : Descuento %
 
 // themes\admin\public\forms\orders.html, themes\admin\public\forms\users.html, themes\default\public\widgets\contactform.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\settings.html, themes\default\views\eshop\signin.html
 T1774297627      : Primer nombre
-T-336058955      : Ultimo nombre
+T-336058955      : Apellido
 
 // themes\admin\public\forms\orders.html, themes\admin\public\templates\subscribers.html, themes\default\public\widgets\contactform.html, themes\default\views\eshop\account.html, themes\default\views\eshop\checkout.html, themes\default\views\eshop\order.html, themes\default\views\eshop\settings.html, themes\default\views\eshop\signin.html, themes\default\views\mails\contact.html, themes\default\views\mails\order-status.html, themes\default\views\mails\order.html
 T1901549392      : Correo electronico

@@ -103,6 +103,8 @@
 		<button class="exec" data-exec="Orders/formStatus" name="finished"><i class="fa fa-check"></i>@(Finished)</button>
 		<span></span>
 		<button class="exec" data-exec="Orders/formStatus" name="canceled"><i class="fa fa-times"></i>@(Canceled)</button>
+		<span></span>
+		<button class="exec" data-exec="Orders/formStatus" name="processing"><i class="fa fa-hourglass-start"></i>@(Processing)</button>
 	</div>
 	<div class="padding bg-yellow">
 		<div data-jc="textbox" data-jc-path="orders.form.status" data-jc-config="required:true;maxlength:100" class="m">@(Order status)</div>
@@ -120,33 +122,6 @@
 			<div data-jc="checkbox" data-jc-path="orders.form.isemail" class="inline">@(Send email to customer about the order status)</div>
 		</div>
 	</div>
-	<div class="padding npb">
-		<div class="row">
-			<div class="col-md-6 m">
-				<div data-jc="textbox" data-jc-path="orders.form.delivery" data-jc-config="required:true;maxlength:50;icon:truck">@(Delivery)</div>
-			</div>
-			<div class="col-md-6 m">
-				<div data-jc="textbox" data-jc-path="orders.form.payment" data-jc-config="required:true;maxlength:50;icon:credit-card">@(Payment)</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 m">
-				<div data-jc="textbox" data-jc-path="orders.form.trackingcode" data-jc-config="maxlength:50;icon:map-pin;align:center">@(Tracking code)</div>
-			</div>
-			<div class="col-md-3 m">
-				<div data-jc="textbox" data-jc-path="orders.form.reference" data-jc-config="maxlength:50;align:center">@(Custom number)</div>
-			</div>
-			<div class="col-md-3 m">
-				<div data-jc="textbox" data-jc-path="orders.form.discount" data-jc-config="maxlength:3;increment:true;type:number;align:center">@(Discount %)</div>
-				<div class="help">@(Information only)</div>
-			</div>
-		</div>
-	</div>
-	<hr class="nmt nmb" />
-	<div class="padding">
-		<div data-jc="textarea" data-jc-path="orders.form.message" data-jc-config="maxlength:500">@(A custom message for the customer)</div>
-	</div>
-	<hr class="nmt nmb" />
 	<div class="padding">
 		<div class="caption"><i class="fa fa-envelope-o"></i>@(Contact information)</div>
 
@@ -183,7 +158,55 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="padding bg-yellow">
+		<div class="caption"><i class="fa fa-shopping-cart"></i>@(Ordered products)</div>
+		<div class="help nmt"><b><i class="fa fa-warning mr5"></i>@(IMPORTANT:)</b> @(count of products in stock is not affected by change of count of ordered products)</div>
+		<br />
+		<div data-jc="orderedproducts" data-jc-path="orders.form.items">
+			<script type="text/html">
+				<div class="ui-orderedproducts-item">
+					<div class="ui-orderedproducts-reference"><input type="text" maxlength="30" name="reference" placeholder="@(Reference)" /></div>
+					<div class="ui-orderedproducts-name"><input type="text" maxlength="100" name="name" value="@{query.name}" id="search" placeholder="@(Name)" /></div>
+					<div class="ui-orderedproducts-price"><input type="text" maxlength="10" name="price" placeholder="@(Price)" /></div>
+					<div class="ui-orderedproducts-count"><input type="text" maxlength="3" name="count" placeholder="@(Count)" /></div>
+					<div class="ui-orderedproducts-sum"><div><b>0.00</b><i class="fa fa-times"></i></div></div>
+				</div>
+			</script>
+		</div>
+		<div class="row">
+			<div class="col-xs-6 fs12"><a href="javascript:void(0)" class="exec" data-exec="Orders/formAddItem"><i class="fa fa-plus-circle mr5"></i>@(Add a new item)</a></div>
+			<div class="col-xs-6 right">
+				@(Summarize:) <span data-b="orders.form.items" data-b-html="orderedproducts_summarize(value)" class="badge badge-blue badge-large b mr5">...</span>
+			</div>
+		</div>
+	</div>
+	<div class="padding npb">
+		<div class="row">
+			<div class="col-md-6 m">
+				<div data-jc="dropdown" data-jc-path="orders.form.delivery" data-jc-config="required:true;maxlength:50;icon:truck;datasource:deliveryTypes">@(Delivery)</div>
+			</div>
+			<div class="col-md-6 m">
+				<div data-jc="dropdown" data-jc-path="orders.form.payment" data-jc-config="required:true;maxlength:50;icon:credit-card;datasource:paymentTypes">@(Payment)</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 m">
+				<div data-jc="textbox" data-jc-path="orders.form.trackingcode" data-jc-config="maxlength:50;icon:map-pin;align:center">@(Tracking code)</div>
+			</div>
+			<div class="col-md-3 m">
+				<div data-jc="textbox" data-jc-path="orders.form.reference" data-jc-config="maxlength:50;align:center">@(Custom number)</div>
+			</div>
+			<div class="col-md-3 m">
+				<div data-jc="textbox" data-jc-path="orders.form.discount" data-jc-config="maxlength:3;increment:true;type:number;align:center">@(Discount %)</div>
+				<div class="help">@(Information only)</div>
+			</div>
+		</div>
+	</div>
+	<hr class="nmt nmb" />
+	<div class="padding">
+		<div data-jc="textarea" data-jc-path="orders.form.message" data-jc-config="maxlength:500">@(A custom message for the customer)</div>
+	</div>
+	<hr class="nmt nmb" />
 	<div class="padding bg-yellow">
 		<div class="caption"><i class="fa fa-building-o"></i>@(Billing address)</div>
 		<div class="row">
@@ -236,28 +259,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="padding">
-		<div class="caption"><i class="fa fa-shopping-cart"></i>@(Ordered products)</div>
-		<div class="help nmt"><b><i class="fa fa-warning mr5"></i>@(IMPORTANT:)</b> @(count of products in stock is not affected by change of count of ordered products)</div>
-		<br />
-		<div data-jc="orderedproducts" data-jc-path="orders.form.items">
-			<script type="text/html">
-				<div class="ui-orderedproducts-item">
-					<div class="ui-orderedproducts-reference"><input type="text" maxlength="30" name="reference" placeholder="@(Reference)" /></div>
-					<div class="ui-orderedproducts-name"><input type="text" maxlength="100" name="name" placeholder="@(Name)" /></div>
-					<div class="ui-orderedproducts-price"><input type="text" maxlength="10" name="price" placeholder="@(Price)" /></div>
-					<div class="ui-orderedproducts-count"><input type="text" maxlength="3" name="count" placeholder="@(Count)" /></div>
-					<div class="ui-orderedproducts-sum"><div><b>0.00</b><i class="fa fa-times"></i></div></div>
-				</div>
-			</script>
-		</div>
-		<div class="row">
-			<div class="col-xs-6 fs12"><a href="javascript:void(0)" class="exec" data-exec="Orders/formAddItem"><i class="fa fa-plus-circle mr5"></i>@(Add a new item)</a></div>
-			<div class="col-xs-6 right">
-				@(Summarize:) <span data-b="orders.form.items" data-b-html="orderedproducts_summarize(value)" class="badge badge-blue badge-large b mr5">...</span>
-			</div>
-		</div>
-	</div>
 	<div data-jc="error" data-jc-path="orders.form.response"></div>
 	<div class="ui-form-buttons" data-jc="validation" data-jc-path="orders.form" data-jc-config="flags:enabled">
 		<button name="cancel">@(Cancel)</button>
@@ -266,6 +267,15 @@
 </div>
 
 <script>
+
+		var deliveryTypes= {};
+		var paymentTypes= {};
+		AJAX('GET [url]api/settings/', function(response) {
+			var tmp = {};
+			if(response)
+				deliveryTypes= response.deliverytypes;
+				paymentTypes= response.paymenttypes;
+		});
 
 	function orderedproducts_summarize(arr) {
 
@@ -331,20 +341,28 @@
 
 		ctrl.formStatus = function(btn) {
 			var msg = '';
+			var setfinished = '';
 			switch (btn.attr('name')) {
 				case 'sent':
 					msg = '@(Goods sent)';
+					setfinished= true;
 					break;
 				case 'finished':
 					msg = '@(Finished)';
+					setfinished= true;
 					break;
 				case 'canceled':
 					msg = '@(Canceled)';
+					setfinished= true;
+					break;
+				case 'processing':
+					msg = '@(Processing)';
+					setfinished= false;
 					break;
 			}
 
 			if (msg) {
-				ctrl.set('form.isfinished', true);
+				ctrl.set('form.isfinished', setfinished);
 				ctrl.set('form.status', msg);
 			}
 		};
